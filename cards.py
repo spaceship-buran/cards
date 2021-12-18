@@ -89,7 +89,7 @@ for x in range(prt):
         ccn = 'Бубны'
     elif cozir == 2:
         ccn = 'Черви'
-    elif cardmast1 == 3:
+    elif cozir == 3:
         ccn = 'Пики'
     else:
         ccn = 'Трефы'
