@@ -13,4 +13,4 @@ but Spades is higher.
 The biggest suit is the Clubs suit.
 The trump suit is bigger than all other.
 Result of games calcs and compares.
-Winner is the player, who have the biggest number of won games
+Winner is the player, who have the biggest number of won games.
