@@ -1,6 +1,7 @@
 print('Карты 0.1')
 #Автор: Ермаков С.В.
 #17/12/2022
+#Лицензия: CC0 1.0 Universal
 from random import randint
 import time
 prt = int(input('Сколько партий? '))
