@@ -39,7 +39,7 @@ for x in range(prt):         #Begin of the game
     elif carddst == 12:
         cdn = 'Король'
     else:
-        cdn = 'Туз'       #Card mast' name
+        cdn = 'Туз'       #Card's suit name
     if cardmast == 1:
         cmn = 'Бубнов'
     elif cardmast == 2:
@@ -76,7 +76,7 @@ for x in range(prt):         #Begin of the game
         cdn1 = 'Король'
     else:
         cdn1 = 'Туз'
-    if cardmast1 == 1: #2-nd player cards' mast'
+    if cardmast1 == 1: #2-nd player cards' suit
         cmn1 = 'Бубнов'
     elif cardmast1 == 2:
         cmn1 = 'Червей'
@@ -85,7 +85,7 @@ for x in range(prt):         #Begin of the game
     else:
         cmn1 = 'Треф'
     cozir = randint(1, 4)
-    if cozir == 1:  #Generate cozir
+    if cozir == 1:  #Generate trump
         ccn = 'Бубны'
     elif cozir == 2:
         ccn = 'Черви'
@@ -93,7 +93,7 @@ for x in range(prt):         #Begin of the game
         ccn = 'Пики'
     else:
         ccn = 'Трефы'
-    print('Стол: ')   #Printing cards names and kozirs
+    print('Стол: ')   #Printing cards names and trumps
     print('Козырь: ', ccn)
     print(n1, ':', '[', cdn, ']', '[', cmn, ']')
     print(n2, ':', '[', cdn1, ']', '[', cmn1, ']')
