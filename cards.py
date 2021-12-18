@@ -4,17 +4,17 @@ print('Карты 0.1')
 #Лицензия: CC0 1.0 Universal
 from random import randint
 import time
-prt = int(input('Сколько партий? '))
+prt = int(input('Сколько партий? '))        #User's data
 n1 = input('Введите имя 1-ого играющего: ')
 n2 = input('Введите имя 2-ого играющего: ')
 score1 = 0
 score2 = 0
-for x in range(prt):
+for x in range(prt):         #Begin of the game
     print('Достаём карты...')
     time.sleep(3)
     carddst = randint(1, 13)
     cardmast = randint(1, 4)
-    if carddst == 1:
+    if carddst == 1:         #Cards' naming
         cdn = 'Двойка'
     elif carddst == 2:
         cdn = 'Тройка'
@@ -39,7 +39,7 @@ for x in range(prt):
     elif carddst == 12:
         cdn = 'Король'
     else:
-        cdn = 'Туз'
+        cdn = 'Туз'       #Card mast' name
     if cardmast == 1:
         cmn = 'Бубнов'
     elif cardmast == 2:
@@ -50,7 +50,7 @@ for x in range(prt):
         cmn = 'Треф'
     carddst1 = randint(1, 13)
     cardmast1 = randint(1, 4)
-    if carddst1 == 1:
+    if carddst1 == 1:   #2-nd player cards' name
         cdn1 = 'Двойка'
     elif carddst1 == 2:
         cdn1 = 'Тройка'
@@ -76,7 +76,7 @@ for x in range(prt):
         cdn1 = 'Король'
     else:
         cdn1 = 'Туз'
-    if cardmast1 == 1:
+    if cardmast1 == 1: #2-nd player cards' mast'
         cmn1 = 'Бубнов'
     elif cardmast1 == 2:
         cmn1 = 'Червей'
@@ -85,7 +85,7 @@ for x in range(prt):
     else:
         cmn1 = 'Треф'
     cozir = randint(1, 4)
-    if cozir == 1:
+    if cozir == 1:  #Generate cozir
         ccn = 'Бубны'
     elif cozir == 2:
         ccn = 'Черви'
@@ -93,12 +93,12 @@ for x in range(prt):
         ccn = 'Пики'
     else:
         ccn = 'Трефы'
-    print('Стол: ')
+    print('Стол: ')   #Printing cards names and kozirs
     print('Козырь: ', ccn)
     print(n1, ':', '[', cdn, ']', '[', cmn, ']')
     print(n2, ':', '[', cdn1, ']', '[', cmn1, ']')
     time.sleep(5)
-    if cardmast > cardmast1:
+    if cardmast > cardmast1: #Checking for the winner
         if cardmast1 == cozir:
             print(n2, 'побил!')
             score2 += 1
@@ -121,7 +121,7 @@ for x in range(prt):
             score2 += 1
         else:
             print('Ничья!')
-print('Итог: ')
+print('Итог: ') #Game's results
 time.sleep(3)
 print(n1, ':', score1)
 print(n2, ':', score2)
@@ -131,4 +131,4 @@ elif score1 < score2:
     print(n2, 'выиграл!')
 else:
     print('Ничья!')
-xt = input('Press "ENTER" to continue...')           
+xt = input('Press "ENTER" to continue...')   #Exiting         
